@@ -17,39 +17,41 @@
     <section>
         <h1 class="text-center mt-5 text-success">Calculate My Monthly Income</h1>
         <div class="row mt-1 g-5 m-5">
+            <!-- banner right  -->
             <div class="col-12 col-lg-8">
                 <img class="img-fluid" src="images/calculator.jpg" alt="">
             </div>
+            <!-- banner left  -->
             <div class="col-12 col-lg-4 shadow-lg rounded-3">
                 <div class="text-center mt-5">
                     <h3>Income</h3>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping">Income:</span>
-                        <input type="text" class="form-control" placeholder="" aria-label=""
+                        <input id="income-input" type="text" class="form-control" placeholder="" aria-label="Username"
                             aria-describedby="addon-wrapping">
                     </div>
                     <h3>Expenses</h3>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping">Food:</span>
-                        <input type="text" class="form-control" placeholder="" aria-label=""
+                        <input id="foot-input" type="text" class="form-control" placeholder="" aria-label="Username"
                             aria-describedby="addon-wrapping">
                     </div>
                     <br>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping">Rent:</span>
-                        <input type="text" class="form-control" placeholder="" aria-label=""
+                        <input id="rent-input" type="text" class="form-control" placeholder="" aria-label="Username"
                             aria-describedby="addon-wrapping">
                     </div>
                     <br>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping">Clothes:</span>
-                        <input type="text" class="form-control" placeholder="" aria-label=""
+                        <input id="clothes-input" type="text" class="form-control" placeholder="" aria-label="Username"
                             aria-describedby="addon-wrapping">
                     </div>
                     <br>
-                    <button class="btn btn-primary">Calculate</button>
-                    <h3>Total Expenses:00</h3>
-                    <h3>Balance: 00</h3>
+                    <button id="calculate-btn" class="btn btn-primary">Calculate</button>
+                    <h3>Total Expenses:<span id="tottal-expenses"></span> </h3>
+                    <h3>Balance:<span id="balance"></span></h3>
                     <p>Save: <input class="type text border border-dark"> % <button
                             class="btn btn-primary">Save</button></p>
                     <h3>Saving Amount: 00</h3>
